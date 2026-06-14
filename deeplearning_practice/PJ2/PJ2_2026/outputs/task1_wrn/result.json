@@ -1,0 +1,11 @@
+{
+  "model": "WideResNet-28-10",
+  "param_count": 36479194,
+  "best_epoch": 1,
+  "best_val_acc": 0.058823529411764705,
+  "test_loss": 6.748440504074097,
+  "test_acc_tta": 0.1328125,
+  "test_error_tta": 0.8671875,
+  "elapsed_sec": 2.822740077972412,
+  "model_path": "D:\\计算机课程\\神经网络与深度学习\\作业\\PJ2\\PJ2_2026\\outputs\\task1_wrn\\best_model.pt"
+}

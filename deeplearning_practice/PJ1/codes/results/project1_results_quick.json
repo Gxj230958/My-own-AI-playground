@@ -1,0 +1,433 @@
+{
+  "note": "出于学习的目的，把 Part C 的 5 个 directions 都实现了，加深理解。",
+  "mode": "quick",
+  "num_epochs": 3,
+  "batch_size": 64,
+  "experiments": {
+    "part_a_mlp_baseline": {
+      "description": "Part A：MLP baseline，使用 SGD，不加额外技巧。",
+      "model_type": "mlp",
+      "model_path": ".\\saved_models\\project1\\quick\\part_a_mlp_baseline.pickle",
+      "history": {
+        "train_loss": [
+          1.542321661029702,
+          1.0872256366722117,
+          0.8482130483051431
+        ],
+        "train_accuracy": [
+          0.65234375,
+          0.76953125,
+          0.82421875
+        ],
+        "valid_loss": [
+          1.5650518165369818,
+          1.1205400078714958,
+          0.8975029465961091
+        ],
+        "valid_accuracy": [
+          0.64453125,
+          0.78125,
+          0.77734375
+        ],
+        "lr": [
+          0.06,
+          0.06,
+          0.06
+        ],
+        "best_valid_accuracy": 0.78125
+      },
+      "test": {
+        "loss": 1.1728262230851154,
+        "accuracy": 0.75390625
+      }
+    },
+    "part_b_cnn_baseline": {
+      "description": "Part B：CNN baseline，自己实现 conv2D 后训练简单 CNN。",
+      "model_type": "cnn",
+      "model_path": ".\\saved_models\\project1\\quick\\part_b_cnn_baseline.pickle",
+      "history": {
+        "train_loss": [
+          2.125363624005977,
+          1.8022410903834516,
+          1.3012256923290804
+        ],
+        "train_accuracy": [
+          0.294921875,
+          0.556640625,
+          0.7255859375
+        ],
+        "valid_loss": [
+          2.134568411245267,
+          1.818891598049339,
+          1.3129760236944161
+        ],
+        "valid_accuracy": [
+          0.27734375,
+          0.51953125,
+          0.72265625
+        ],
+        "lr": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "best_valid_accuracy": 0.72265625
+      },
+      "test": {
+        "loss": 1.3746245339444352,
+        "accuracy": 0.65625
+      }
+    },
+    "part_c1_momentum": {
+      "description": "Part C Direction 1：Optimization，使用 Momentum 优化器。",
+      "model_type": "mlp",
+      "model_path": ".\\saved_models\\project1\\quick\\part_c1_momentum.pickle",
+      "history": {
+        "train_loss": [
+          1.0220783169535657,
+          0.4904939302854937,
+          0.368507233335694
+        ],
+        "train_accuracy": [
+          0.7080078125,
+          0.8681640625,
+          0.884765625
+        ],
+        "valid_loss": [
+          1.0687982928402926,
+          0.598366042642575,
+          0.47462004608394553
+        ],
+        "valid_accuracy": [
+          0.6875,
+          0.82421875,
+          0.83984375
+        ],
+        "lr": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "best_valid_accuracy": 0.83984375
+      },
+      "test": {
+        "loss": 0.4363929997405962,
+        "accuracy": 0.84765625
+      }
+    },
+    "part_c1_multistep_lr": {
+      "description": "Part C Direction 1：Optimization，使用 MultiStepLR 学习率调度。",
+      "model_type": "mlp",
+      "model_path": ".\\saved_models\\project1\\quick\\part_c1_multistep_lr.pickle",
+      "history": {
+        "train_loss": [
+          1.5945220732420475,
+          1.1238648645224885,
+          0.875804669780888
+        ],
+        "train_accuracy": [
+          0.5859375,
+          0.7578125,
+          0.7978515625
+        ],
+        "valid_loss": [
+          1.6472308464073053,
+          1.174748885831685,
+          0.9217365472641905
+        ],
+        "valid_accuracy": [
+          0.6015625,
+          0.7421875,
+          0.8046875
+        ],
+        "lr": [
+          0.06,
+          0.06,
+          0.06
+        ],
+        "best_valid_accuracy": 0.8046875
+      },
+      "test": {
+        "loss": 0.9647131573285135,
+        "accuracy": 0.734375
+      }
+    },
+    "part_c2_l2_regularization": {
+      "description": "Part C Direction 2：Regularization，使用 L2 / weight decay。",
+      "model_type": "mlp",
+      "model_path": ".\\saved_models\\project1\\quick\\part_c2_l2_regularization.pickle",
+      "history": {
+        "train_loss": [
+          1.716753056318633,
+          1.2319699523611936,
+          0.9348853392237774
+        ],
+        "train_accuracy": [
+          0.5556640625,
+          0.73046875,
+          0.802734375
+        ],
+        "valid_loss": [
+          1.7492157245283733,
+          1.285028442127662,
+          1.0095721012102925
+        ],
+        "valid_accuracy": [
+          0.5078125,
+          0.71484375,
+          0.75390625
+        ],
+        "lr": [
+          0.06,
+          0.06,
+          0.06
+        ],
+        "best_valid_accuracy": 0.75390625
+      },
+      "test": {
+        "loss": 1.0512732730306422,
+        "accuracy": 0.74609375
+      }
+    },
+    "part_c2_dropout_early_stopping": {
+      "description": "Part C Direction 2：Regularization，使用 Dropout，并启用 early stopping。",
+      "model_type": "mlp",
+      "model_path": ".\\saved_models\\project1\\quick\\part_c2_dropout_early_stopping.pickle",
+      "history": {
+        "train_loss": [
+          1.6543831689142432,
+          1.223778490747802,
+          0.9512319660390702
+        ],
+        "train_accuracy": [
+          0.603515625,
+          0.751953125,
+          0.7958984375
+        ],
+        "valid_loss": [
+          1.6564742566391615,
+          1.2415760124237991,
+          0.9959784333329483
+        ],
+        "valid_accuracy": [
+          0.60546875,
+          0.73828125,
+          0.76953125
+        ],
+        "lr": [
+          0.06,
+          0.06,
+          0.06
+        ],
+        "best_valid_accuracy": 0.76953125
+      },
+      "test": {
+        "loss": 1.0553856466514613,
+        "accuracy": 0.74609375
+      }
+    },
+    "part_c3_data_augmentation": {
+      "description": "Part C Direction 3：Data Augmentation，对训练图片做小旋转和小平移。",
+      "model_type": "cnn",
+      "model_path": ".\\saved_models\\project1\\quick\\part_c3_data_augmentation.pickle",
+      "history": {
+        "train_loss": [
+          1.8867020741041771,
+          1.3387283051209957,
+          0.922999493034023
+        ],
+        "train_accuracy": [
+          0.4248046875,
+          0.6455078125,
+          0.759765625
+        ],
+        "valid_loss": [
+          1.9038830333163204,
+          1.346568446976462,
+          0.9423278132235683
+        ],
+        "valid_accuracy": [
+          0.40625,
+          0.65625,
+          0.74609375
+        ],
+        "lr": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "best_valid_accuracy": 0.74609375
+      },
+      "test": {
+        "loss": 0.9457475192129912,
+        "accuracy": 0.75
+      }
+    }
+  },
+  "robustness": {
+    "part_a_mlp_baseline": {
+      "clean": {
+        "loss": 1.1728262230851154,
+        "accuracy": 0.75390625
+      },
+      "translation_shift_2": {
+        "loss": 1.6994392638028701,
+        "accuracy": 0.46484375
+      },
+      "rotation_10deg": {
+        "loss": 1.2045878362452005,
+        "accuracy": 0.703125
+      },
+      "gaussian_noise_sigma_0.2": {
+        "loss": 1.314843694382637,
+        "accuracy": 0.67578125
+      }
+    },
+    "part_b_cnn_baseline": {
+      "clean": {
+        "loss": 1.3746245339444352,
+        "accuracy": 0.65625
+      },
+      "translation_shift_2": {
+        "loss": 1.7246219489067487,
+        "accuracy": 0.43359375
+      },
+      "rotation_10deg": {
+        "loss": 1.4015301313931694,
+        "accuracy": 0.6484375
+      },
+      "gaussian_noise_sigma_0.2": {
+        "loss": 1.6097686373156708,
+        "accuracy": 0.5
+      }
+    }
+  },
+  "error_analysis": {
+    "cnn_confusion_matrix": [
+      [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        12,
+        6,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        15,
+        1,
+        0,
+        2,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        24,
+        0,
+        5,
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        5,
+        3,
+        1,
+        2,
+        0,
+        14,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        19,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        3,
+        0,
+        0,
+        22,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        12,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        1,
+        11,
+        0,
+        0,
+        1,
+        2,
+        10
+      ]
+    ],
+    "cnn_confusion_matrix_path": ".\\figs\\project1\\quick\\cnn_confusion_matrix.png",
+    "cnn_misclassified_examples_path": ".\\figs\\project1\\quick\\cnn_misclassified_examples.png",
+    "cnn_first_layer_kernels_path": ".\\figs\\project1\\quick\\cnn_first_layer_kernels.png",
+    "mlp_first_layer_weights_path": ".\\figs\\project1\\quick\\mlp_first_layer_weights.png"
+  }
+}

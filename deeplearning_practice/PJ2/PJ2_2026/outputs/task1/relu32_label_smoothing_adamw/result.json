@@ -1,0 +1,17 @@
+{
+  "name": "relu32_label_smoothing_adamw",
+  "base_width": 32,
+  "activation": "relu",
+  "loss_name": "label_smoothing",
+  "optimizer_name": "adamw",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "param_count": 305258,
+  "best_epoch": 10,
+  "best_val_acc": 0.826,
+  "test_loss": 0.9397166865348816,
+  "test_acc": 0.8194,
+  "test_error": 0.18059999999999998,
+  "elapsed_sec": 262.42978858947754,
+  "model_path": "D:\\计算机课程\\神经网络与深度学习\\作业\\PJ2\\PJ2_2026\\outputs\\task1\\relu32_label_smoothing_adamw\\best_model.pt"
+}

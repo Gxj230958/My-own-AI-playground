@@ -1,0 +1,17 @@
+{
+  "name": "relu32_ce_sgd",
+  "base_width": 32,
+  "activation": "relu",
+  "loss_name": "ce",
+  "optimizer_name": "sgd",
+  "lr": 0.05,
+  "weight_decay": 0.0005,
+  "param_count": 305258,
+  "best_epoch": 8,
+  "best_val_acc": 0.794,
+  "test_loss": 0.633214601802826,
+  "test_acc": 0.7849,
+  "test_error": 0.21509999999999996,
+  "elapsed_sec": 275.66299390792847,
+  "model_path": "D:\\计算机课程\\神经网络与深度学习\\作业\\PJ2\\PJ2_2026\\outputs\\task1\\relu32_ce_sgd\\best_model.pt"
+}

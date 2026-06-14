@@ -1,0 +1,17 @@
+{
+  "name": "relu32_ce_l2_adamw",
+  "base_width": 32,
+  "activation": "relu",
+  "loss_name": "ce",
+  "optimizer_name": "adamw",
+  "lr": 0.001,
+  "weight_decay": 0.0005,
+  "param_count": 305258,
+  "best_epoch": 11,
+  "best_val_acc": 0.8188,
+  "test_loss": 0.5481230864524841,
+  "test_acc": 0.8131,
+  "test_error": 0.18689999999999996,
+  "elapsed_sec": 263.4442844390869,
+  "model_path": "D:\\计算机课程\\神经网络与深度学习\\作业\\PJ2\\PJ2_2026\\outputs\\task1\\relu32_ce_l2_adamw\\best_model.pt"
+}

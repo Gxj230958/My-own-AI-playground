@@ -1,0 +1,7 @@
+name,base_width,activation,loss_name,optimizer_name,lr,weight_decay,param_count,best_epoch,best_val_acc,test_loss,test_acc,test_error,elapsed_sec,model_path
+baseline_relu32_ce_adamw,32,relu,ce,adamw,0.001,0.0001,305258,11,0.8242,0.5596584328651428,0.8113,0.18869999999999998,250.6493444442749,D:\计算机课程\神经网络与深度学习\作业\PJ2\PJ2_2026\outputs\task1\baseline_relu32_ce_adamw\best_model.pt
+wider_relu64_ce_adamw,64,relu,ce,adamw,0.001,0.0001,1180490,10,0.8498,0.4746289675235748,0.8383,0.16169999999999995,305.751788854599,D:\计算机课程\神经网络与深度学习\作业\PJ2\PJ2_2026\outputs\task1\wider_relu64_ce_adamw\best_model.pt
+silu32_ce_adamw,32,silu,ce,adamw,0.001,0.0001,305258,11,0.8316,0.509491632270813,0.8264,0.17359999999999998,265.8838813304901,D:\计算机课程\神经网络与深度学习\作业\PJ2\PJ2_2026\outputs\task1\silu32_ce_adamw\best_model.pt
+relu32_label_smoothing_adamw,32,relu,label_smoothing,adamw,0.001,0.0001,305258,10,0.826,0.9397166865348816,0.8194,0.18059999999999998,262.42978858947754,D:\计算机课程\神经网络与深度学习\作业\PJ2\PJ2_2026\outputs\task1\relu32_label_smoothing_adamw\best_model.pt
+relu32_ce_l2_adamw,32,relu,ce,adamw,0.001,0.0005,305258,11,0.8188,0.5481230864524841,0.8131,0.18689999999999996,263.4442844390869,D:\计算机课程\神经网络与深度学习\作业\PJ2\PJ2_2026\outputs\task1\relu32_ce_l2_adamw\best_model.pt
+relu32_ce_sgd,32,relu,ce,sgd,0.05,0.0005,305258,8,0.794,0.633214601802826,0.7849,0.21509999999999996,275.66299390792847,D:\计算机课程\神经网络与深度学习\作业\PJ2\PJ2_2026\outputs\task1\relu32_ce_sgd\best_model.pt

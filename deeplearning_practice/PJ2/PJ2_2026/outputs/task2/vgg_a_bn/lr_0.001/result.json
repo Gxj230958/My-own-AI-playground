@@ -1,0 +1,8 @@
+{
+  "family": "vgg_a_bn",
+  "lr": 0.001,
+  "param_count": 9754698,
+  "best_val_acc": 0.8291,
+  "elapsed_sec": 331.9607746601105,
+  "steps": 7820
+}

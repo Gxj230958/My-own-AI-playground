@@ -1,0 +1,17 @@
+{
+  "name": "silu32_ce_adamw",
+  "base_width": 32,
+  "activation": "silu",
+  "loss_name": "ce",
+  "optimizer_name": "adamw",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "param_count": 305258,
+  "best_epoch": 11,
+  "best_val_acc": 0.8316,
+  "test_loss": 0.509491632270813,
+  "test_acc": 0.8264,
+  "test_error": 0.17359999999999998,
+  "elapsed_sec": 265.8838813304901,
+  "model_path": "D:\\计算机课程\\神经网络与深度学习\\作业\\PJ2\\PJ2_2026\\outputs\\task1\\silu32_ce_adamw\\best_model.pt"
+}

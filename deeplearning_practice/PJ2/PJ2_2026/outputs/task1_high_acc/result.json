@@ -1,0 +1,12 @@
+{
+  "model": "resnet18",
+  "pretrained": true,
+  "param_count": 11173962,
+  "best_epoch": 20,
+  "best_val_acc": 0.9726,
+  "test_loss": 0.5864945130348206,
+  "test_acc_tta": 0.9666,
+  "test_error_tta": 0.033399999999999985,
+  "elapsed_sec": 2279.137421131134,
+  "model_path": "outputs\\task1_high_acc\\best_model.pt"
+}
